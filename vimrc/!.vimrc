@@ -101,6 +101,9 @@ source $HOME/.vim/vimrc/lusty.vimrc
 
 source $HOME/.vim/vimrc/fuzzyfinder.vimrc 
 
+" BUNDLE: git://github.com/rson/vim-conque.git
+source $HOME/.vim/vimrc/conque.vimrc 
+
 "
 " VIM extensions
 "
