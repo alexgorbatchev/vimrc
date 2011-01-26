@@ -1,3 +1,10 @@
+let g:fuf_maxMenuWidth = 150
+
+map <leader>ff :call ProjectFuzzyFind()<CR>
+map <leader>fb :FufBuffer<CR>
+map <leader>fq :FufQuickfix<CR>
+map <leader>fl :FufLine<CR>
+
 "
 " With modifications from http://efiquest.org/2010-09-24/49/
 "              
@@ -8,11 +15,6 @@
 " another/**
 " *
 "
-let g:fuf_maxMenuWidth = 150
-nmap <leader>ff :call ProjectFuzzyFind()<CR>
-nmap <leader>fb :FufBuffer<CR>
-nmap <leader>fq :FufQuickfix<CR>
-
 function! ProjectFuzzyFind()
   let origcurdir = getcwd()
   let curdir = origcurdir
@@ -36,7 +38,7 @@ function! ProjectFuzzyFind()
  
     call fuf#givenfile#launch('', 0, '>', files)
   else
-  	" if no .fuzzyfinder file found, simply run :FufFile
+  	" agorbatchev: if no .fuzzyfinder file found, simply run :FufFile
 	:FufFileWithCurrentBufferDir 
   endif
 endfunction
