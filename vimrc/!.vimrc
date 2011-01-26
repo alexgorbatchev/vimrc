@@ -111,6 +111,7 @@ source $HOME/.vim/vimrc/file.vimrc
 source $HOME/.vim/vimrc/windows.vimrc 
 source $HOME/.vim/vimrc/search.vimrc 
 source $HOME/.vim/vimrc/statusline.vimrc 
+source $HOME/.vim/vimrc/visual.vimrc 
 
 "
 " Project Specific
