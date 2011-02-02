@@ -8,7 +8,8 @@ git_bundles = [
   [ "git://github.com/timcharper/textile.vim.git",     :syntax ],
   # [ "git://github.com/tpope/vim-cucumber.git",         :syntax ],
   [ "git://github.com/tpope/vim-fugitive.git",         :plugin ],
-  [ "git://github.com/tpope/vim-git.git",              :plugin ],
+  # [ "git://github.com/tpope/vim-git.git",              :plugin ],
+  [ "git://github.com/motemen/git-vim.git",            :plugin ],
   [ "git://github.com/tpope/vim-haml.git",             :syntax ],
   [ "git://github.com/tpope/vim-markdown.git",         :syntax ],
   # [ "git://github.com/tpope/vim-rails.git",            :plugin ],
@@ -48,7 +49,7 @@ puts "Trashing everything (lookout!)"
 Dir["*"].each {|d| FileUtils.rm_rf d }
 
 git_bundles.each do |url, script_type|
-  dir = "#{script_type}-#{url.split('/').last.gsub(/(^vim-)|(\.vim)|(\.git$)/, '')}"
+  dir = "#{script_type}-#{url.split('/').last.gsub(/(^vim-)|(-vim)|(\.vim)|(\.git$)/, '')}"
   puts "  Unpacking #{url} into #{dir}"
   `git clone #{url} #{dir}`
   FileUtils.rm_rf(File.join(dir, ".git"))
