@@ -77,6 +77,8 @@ set directory=~/.vim/swap,~/tmp,/var/tmp/,tmp
 
 "set smarttab          " use shiftwidth when hitting tab instead of sts (?)
 "set autoindent        " try to put the right amount of space at the beginning of a new line
+set smartindent
+set shiftwidth=4
 set tabstop=4		  " tab is 4 spaces
 set noexpandtab       " use tabs
 

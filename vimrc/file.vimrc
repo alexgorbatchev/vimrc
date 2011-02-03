@@ -6,5 +6,5 @@
 map <leader>cd :cd %:p:h<CR>:pwd<CR>
 
 " Reload currect config
-nmap <F12> :source $MYVIMRC<CR>
+nmap <S-F10> :source $MYVIMRC<CR>
 

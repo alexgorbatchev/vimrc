@@ -13,3 +13,6 @@ set winminheight=0
 " maximize current window
 " nmap <F5> <C-W>_<C-W><Bar>
 
+map <A-D-left> :tabprev<CR>
+map <A-D-right> :tabnext<CR>
+

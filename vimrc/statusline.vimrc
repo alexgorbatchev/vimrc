@@ -4,7 +4,7 @@ set laststatus=2
 " Format the statusline
 " set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
 " set statusline=%{CurDir()}%=%-15.(\ \ %l:%c\ %p%%%)\ %<%f%h%m\ %r%{fugitive#statusline()}
-set statusline=%<%f%h%m\ %r%{fugitive#statusline()}%=%15.(%l:%c\ %p%%%\ ) 
+set statusline=%<%f%h%m\ %r%{fugitive#statusline()}%=%15.(%l:%c:%p%%%)
 
 function! CurDir()
     let curdir = substitute(getcwd(), $HOME, "~/", "g")
