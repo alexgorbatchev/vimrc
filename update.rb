@@ -7,7 +7,7 @@ git_bundles = [
   [ "git://github.com/scrooloose/nerdcommenter.git",   :plugin ],
   [ "git://github.com/timcharper/textile.vim.git",     :syntax ],
   # [ "git://github.com/tpope/vim-cucumber.git",         :syntax ],
-  [ "git://github.com/tpope/vim-fugitive.git",         :plugin ],
+  # [ "git://github.com/tpope/vim-fugitive.git",         :plugin ],
   # [ "git://github.com/tpope/vim-git.git",              :plugin ],
   [ "git://github.com/motemen/git-vim.git",            :plugin ],
   [ "git://github.com/tpope/vim-haml.git",             :syntax ],
