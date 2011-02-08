@@ -35,10 +35,15 @@ function! ProjectFuzzyFind()
     let items = readfile(".fuzzyfinder")
     let files = []
     for n in items
-      let files += split(glob(curdir . "/" . n), "\n")
+      let globlist = glob(curdir.'/'.n)
+      let files += split(substitute(globlist, curdir.'/', '', 'g'), '\n')
     endfor
  
-    call fuf#givenfile#launch('', 0, '>', files)
+	" agorbatchev: cd into the dir
+ 	execute('cd '.curdir)
+	" agorbatchev: augment curdir with ~/ if we are somewhere inside user's home directory
+	let prompt = substitute(substitute(curdir.'/', $HOME, '~/', 'g'), '//', '/', 'g')
+    call fuf#givenfile#launch('', 0, prompt, files)
   else
   	" agorbatchev: if no .fuzzyfinder file found, simply run :FufFile
 	:FufFileWithCurrentBufferDir 
