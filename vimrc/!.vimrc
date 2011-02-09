@@ -5,26 +5,10 @@ call pathogen#runtime_append_all_bundles()
 filetype plugin on
 
 
-
 " colorscheme vividchalk 
 colorscheme zenburn 
 syntax on
 
-"
-" ActioScript settings
-"
-" Use .as for ActionScript files, not Atlas files
-au BufNewFile,BufRead *.as set filetype=actionscript
-" Put these in an autocmd group, so that we can delete them easily.
-augroup vimrc
-au!
-autocmd FileType actionscript setlocal sw=4 sts=4 et
-autocmd FileType python       setlocal sw=4 sts=4 et 
-autocmd FileType ruby         setlocal sw=2 sts=2 et
-augroup END
-"
-" end of ActionScript support
-"
 
 "set exrc " Enables the reading of .vimrc, .exrc and .gvimrc in the current directory. 
 "set secure
@@ -36,6 +20,8 @@ set cursorline								" Highlight current line
 set lines=999 columns=999					" Maximize window size
 set ignorecase								" Search is case insensitive
 
+"set list listchars=tab:»\ ,eol:¶,trail:·
+set list listchars=tab:»\ ,eol:¶
 
 set incsearch         " find the next match as we type the search
 set hlsearch          " hilight searches by default
@@ -114,6 +100,7 @@ source $HOME/.vim/vimrc/windows.vimrc
 source $HOME/.vim/vimrc/search.vimrc 
 source $HOME/.vim/vimrc/statusline.vimrc 
 source $HOME/.vim/vimrc/visual.vimrc 
+
 
 "
 " Project Specific
