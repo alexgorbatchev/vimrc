@@ -23,5 +23,3 @@ autocmd FileType python       setlocal shiftwidth=4 softtabstop=4 expandtab
 " ruby
 autocmd FileType ruby         setlocal shiftwidth=2 softtabstop=2 expandtab
 
-:autocmd BufReadPost * :DetectIndent
-

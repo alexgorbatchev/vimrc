@@ -23,7 +23,6 @@ git_bundles = [
   # [ "git://github.com/vim-ruby/vim-ruby.git",          :syntax ],
   [ "git://github.com/sjbach/lusty.git",               :plugin ],
   [ "git://github.com/rson/vim-conque.git",            :plugin ],
-  [ "git://github.com/ciaranm/detectindent.git",       :plugin ],
 ]
 
 vim_org_scripts = [
