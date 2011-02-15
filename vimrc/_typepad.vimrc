@@ -11,4 +11,8 @@ vmap <leader>4 :s/\%V\(.*\)\%V/gettext(\1)/<CR>
 autocmd BufNewFile,BufRead /Users/agorbatchev/videoegg/conversations/**/*.html set nowrap expandtab tabstop=4 shiftwidth=4 shiftwidth=4 
 autocmd BufNewFile,BufRead /Users/agorbatchev/videoegg/conversations/**/*.py set nowrap expandtab tabstop=4 shiftwidth=4 shiftwidth=4 
 
+nmap <leader>ai :%s/\(\W\)a\(\W\)/\1i\2/g<CR>
+nmap <leader>ux :e ++ff=dos<CR>:setlocal ff=unix<CR>:w<CR>
+nmap <leader>uu :setlocal ff=unix<CR>:w<CR>
+nmap <leader>: :%s/\(\S\):\(\S\)/\1 : \2/g<CR>
 

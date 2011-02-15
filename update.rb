@@ -27,7 +27,6 @@ git_bundles = [
 
 vim_org_scripts = [
   [ "indexedsearch", "7062",   :plugin ],
-  [ "gist",          "12732",  :plugin ],
   [ "l9",            "13948",  :plugin, :zip ],
   [ "fuzzyfinder",   "13961",  :plugin, :zip ],
   [ "jquery",        "12107",  :syntax ],
