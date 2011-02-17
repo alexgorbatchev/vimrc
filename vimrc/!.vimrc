@@ -37,13 +37,13 @@ set backspace=indent,eol,start								" allow backspacing over everything in ins
 set history=1000											" store lots of :cmdline history
 set nobackup
 set noswapfile
-set hidden 													" allow buffers to go into the background without needing to save
+set nohidden												" allow buffers to go into the background without needing to save
 set visualbell 												" don't beep constantly, it's annoying.
 set t_vb= 													" and don't flash the screen either (terminal anyway...)
 set guioptions-=T 											" hide gvim's toolbar by default
 set tags=.tags,tags;/ 										" search for a tags file recursively from cwd to /
 set directory=~/.vim/swap,~/tmp,/var/tmp/,tmp 				" Store swapfiles in a single directory.
-
+set nofoldenable 											" I don't like folding...
 
 "set smarttab          " use shiftwidth when hitting tab instead of sts (?)
 "set autoindent        " try to put the right amount of space at the beginning of a new line
