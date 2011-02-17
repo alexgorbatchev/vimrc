@@ -21,8 +21,10 @@ git_bundles = [
   [ "git://github.com/tsaleh/vim-supertab.git",        :plugin ],
   [ "git://github.com/tsaleh/vim-tcomment.git",        :plugin ],
   # [ "git://github.com/vim-ruby/vim-ruby.git",          :syntax ],
-  [ "git://github.com/sjbach/lusty.git",               :plugin ],
+  # [ "git://github.com/sjbach/lusty.git",               :plugin ],
   [ "git://github.com/rson/vim-conque.git",            :plugin ],
+  # [ "git://github.com/vim-scripts/Command-T.git",      :plugin ],
+  [ "git://github.com/vim-scripts/IndentConsistencyCop.git",  :plugin ],
 ]
 
 vim_org_scripts = [
