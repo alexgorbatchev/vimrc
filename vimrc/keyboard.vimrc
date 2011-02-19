@@ -22,7 +22,8 @@ vnoremap > >gv
 " Gets the word under the cursor, and searches for it in the current directory 
 " and all subdirectories, opening the quickfix window when done
 nmap <leader>fw :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> :FufQuickfix<CR>
-map <leader>g :vimgrep // **/* <Bar> :FufQuickfix<C-LEFT><C-LEFT><C-LEFT><C-LEFT><RIGHT>
+nmap <leader>g :vimgrep // **/* <Bar> :FufQuickfix<C-LEFT><C-LEFT><C-LEFT><C-LEFT><RIGHT>
+nmap <Leader>r :%s/\<<C-r><C-w>\>//g<Left><Left>
 
 " When pressing <leader>cd switch to the directory of the open buffer
 map <leader>cd :cd %:p:h<CR>:pwd<CR>
@@ -36,4 +37,6 @@ map <leader>fb :FufBuffer<CR>
 map <leader>fq :FufQuickfix<CR>
 map <leader>fl :FufLine<CR>
 
+" reloads all snipmate snippets
+map <leader>smr :call ReloadAllSnippets()<CR>
 

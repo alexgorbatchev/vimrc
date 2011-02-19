@@ -1,0 +1,99 @@
+snippet $pv
+	private var _${1:name} : ${2:Object};
+snippet clo
+	(function({$1:args})
+	{
+		{$2:// body...}
+	})({$1:args});
+snippet $get
+	private var _${1:name} : ${2:Object};
+
+	public function get $1() : $2
+	{
+		return _$1;
+	}
+snippet $getset
+	private var _${1:name} : ${2:Object};
+
+	public function get $1() : $2
+	{
+		return _$1;
+	}
+
+	public function set $1(value : $2) : void
+	{
+		_$1 = value;
+	}
+snippet $pubf
+	public function ${1:name}(${2}) : ${3:void}
+	{
+		${4}
+	}
+snippet $privf
+	private function ${1:name}(${2}) : ${3:void}
+	{
+		${4}
+	}
+snippet $protf
+	prptected function ${1:name}(${2}) : ${3:void}
+	{
+		${4}
+	}
+# Anonymous Function
+snippet $anfun
+	function(${1})
+	{
+		${2}
+	};
+# if
+snippet if
+	if (${1:true})
+	{
+		${2}
+	}
+# if ... else
+snippet ife
+	if(${1:true})
+	{
+		${2}
+	}
+	else
+	{
+		${3}
+	}
+# tertiary conditional
+snippet ?
+	${1:/* condition */} ? ${2:a} : ${3:b};
+# switch
+snippet switch
+	switch(${1:expression})
+	{
+		case ${3:case}:
+			${4:// code}
+			break;
+		${5}
+		default:
+			${2:// code}
+	}
+# case
+snippet case
+	case ${1:case}:
+		${2:// code}
+		break;
+	${3}
+# for (...) {...}
+snippet for
+	for(var ${2:i} = 0; $2 < ${1:Things}.length; $2${3:++})
+	{
+		${4:$1[$2]}
+	};
+# Object Method
+snippet :f
+	${1:method_name}: function(${2:attribute})
+	{
+		${4}
+	}${3:,}
+# setTimeout function
+snippet timeout
+	setTimeout(function() { ${3} }${2}, ${1:10});
+
