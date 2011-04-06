@@ -2,8 +2,9 @@
 " http://vim.wikia.com/wiki/File_format
 set ffs=unix,dos,mac
 
-" actioscript
-au BufNewFile,BufRead *.as set filetype=actionscript
+" actioscript/flex
+autocmd BufNewFile,BufRead *.as set filetype=actionscript
+autocmd BufNewFile,BufRead *.mxml set filetype=mxml
 autocmd FileType actionscript setlocal shiftwidth=4 softtabstop=4 noexpandtab
 
 " python

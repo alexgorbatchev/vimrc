@@ -5,7 +5,7 @@ call pathogen#runtime_append_all_bundles()
 filetype plugin on
 
 if &t_Co >= 256 || has("gui_running")
-   colorscheme zenburn
+   colorscheme blackboard
 endif
 
 " switch syntax highlighting on, when the terminal has colors
@@ -56,6 +56,7 @@ source $HOME/.vim/vimrc/nerdtree.vimrc
 source $HOME/.vim/vimrc/nerdcommenter.vimrc 
 source $HOME/.vim/vimrc/fuzzyfinder.vimrc 
 source $HOME/.vim/vimrc/conque.vimrc 
+source $HOME/.vim/vimrc/snipmate.vimrc 
 
 "
 " VIM extensions

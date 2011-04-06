@@ -40,3 +40,6 @@ map <leader>fl :FufLine<CR>
 " reloads all snipmate snippets
 map <leader>smr :call ReloadAllSnippets()<CR>
 
+" YankRing hookup
+nnoremap <leader>y :YRShow<CR>
+

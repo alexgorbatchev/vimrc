@@ -16,15 +16,17 @@ git_bundles = [
   [ "git://github.com/tpope/vim-repeat.git",           :plugin ],
   [ "git://github.com/tpope/vim-surround.git",         :plugin ],
   [ "git://github.com/tpope/vim-vividchalk.git",       :colors ],
+  [ "git://github.com/nelstrom/vim-blackboard.git",    :colors ],
   [ "git://github.com/tsaleh/vim-align.git",           :plugin ],
   [ "git://github.com/tsaleh/vim-shoulda.git",         :plugin ],
   [ "git://github.com/tsaleh/vim-supertab.git",        :plugin ],
   [ "git://github.com/tsaleh/vim-tcomment.git",        :plugin ],
-  # [ "git://github.com/vim-ruby/vim-ruby.git",          :syntax ],
+  [ "git://github.com/vim-ruby/vim-ruby.git",          :syntax ],
   # [ "git://github.com/sjbach/lusty.git",               :plugin ],
   [ "git://github.com/rson/vim-conque.git",            :plugin ],
-  # [ "git://github.com/vim-scripts/Command-T.git",      :plugin ],
-  [ "git://github.com/vim-scripts/IndentConsistencyCop.git",  :plugin ],
+  [ "git://github.com/vim-scripts/YankRing.vim.git",   :plugin ],
+  [ "git://github.com/vim-scripts/Flex-4.git",         :syntax ],
+  [ "git://github.com/kchmck/vim-coffee-script.git",   :syntax ],
 ]
 
 vim_org_scripts = [

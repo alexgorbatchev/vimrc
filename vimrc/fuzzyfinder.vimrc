@@ -40,6 +40,7 @@ function! ProjectFuzzyFind()
     let prompt = substitute(substitute(curdir.'/', $HOME, '~/', 'g'), '//', '/', 'g')
     call fuf#givenfile#launch('', 0, prompt, files)
   else
+    execute('cd '.origcurdir)
     " agorbatchev: if no .fuzzyfinder file found, simply run :FufFile
     :FufFileWithCurrentBufferDir 
   endif

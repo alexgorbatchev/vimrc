@@ -1,18 +1,21 @@
-snippet $pv
+snippet /**
+	/**
+	 * ${1}
+	 * @author agorbatchev
+	 * @date `strftime("%Y/%m/%d")`
+	 */
+snippet var public
+	public var ${1:name} : ${2:Object};
+snippet var private
 	private var _${1:name} : ${2:Object};
-snippet clo
-	(function({$1:args})
-	{
-		{$2:// body...}
-	})({$1:args});
-snippet $get
+snippet var with getter
 	private var _${1:name} : ${2:Object};
 
 	public function get $1() : $2
 	{
 		return _$1;
 	}
-snippet $getset
+snippet var with getter and setter
 	private var _${1:name} : ${2:Object};
 
 	public function get $1() : $2
@@ -24,34 +27,38 @@ snippet $getset
 	{
 		_$1 = value;
 	}
-snippet $pubf
+snippet var MovieClip
+	public var ${1} : MovieClip;
+snippet func public function
 	public function ${1:name}(${2}) : ${3:void}
 	{
 		${4}
 	}
-snippet $privf
+snippet func private function
 	private function ${1:name}(${2}) : ${3:void}
 	{
 		${4}
 	}
-snippet $protf
-	prptected function ${1:name}(${2}) : ${3:void}
+snippet func protected function
+	protected function ${1:name}(${2}) : ${3:void}
 	{
 		${4}
 	}
-# Anonymous Function
-snippet $anfun
-	function(${1})
-	{
-		${2}
-	};
-# if
-snippet if
-	if (${1:true})
+snippet func anonymous function
+	function(${1}) : void
 	{
 		${2}
 	}
-# if ... else
+snippet func closure
+	(function({$1:args}) : void
+	{
+		{$2}
+	})({$1:args});
+snippet if
+	if(${1:true})
+	{
+		${2}
+	}
 snippet ife
 	if(${1:true})
 	{
@@ -61,39 +68,39 @@ snippet ife
 	{
 		${3}
 	}
-# tertiary conditional
 snippet ?
-	${1:/* condition */} ? ${2:a} : ${3:b};
-# switch
+	${1} ? ${2:a} : ${3:b};
 snippet switch
-	switch(${1:expression})
+	switch(${1})
 	{
-		case ${3:case}:
-			${4:// code}
+		case ${2}:
+			${3:// code}
 			break;
-		${5}
+		${4}
 		default:
-			${2:// code}
+			${5}
 	}
-# case
 snippet case
 	case ${1:case}:
 		${2:// code}
 		break;
 	${3}
-# for (...) {...}
 snippet for
-	for(var ${2:i} = 0; $2 < ${1:Things}.length; $2${3:++})
+	for(var ${2:i} = 0; $2 < ${1:list}.length; $2${3:++})
 	{
-		${4:$1[$2]}
-	};
-# Object Method
+		var item : ${4:Object} = $1[$2];
+		${5}
+	}
 snippet :f
 	${1:method_name}: function(${2:attribute})
 	{
 		${4}
 	}${3:,}
-# setTimeout function
-snippet timeout
-	setTimeout(function() { ${3} }${2}, ${1:10});
+snippet setTimeout
+	setTimeout(function() : void
+		{
+			${3}
+		},
+		${1:100}
+	);
 
