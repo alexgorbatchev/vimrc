@@ -3,7 +3,6 @@
 git_bundles = [ 
   # [ "git://github.com/astashov/vim-ruby-debugger.git", :plugin ],
   [ "git://github.com/msanders/snipmate.vim.git",      :plugin ],
-  [ "git://github.com/scrooloose/nerdtree.git",        :plugin ],
   [ "git://github.com/scrooloose/nerdcommenter.git",   :plugin ],
   [ "git://github.com/timcharper/textile.vim.git",     :syntax ],
   # [ "git://github.com/tpope/vim-cucumber.git",         :syntax ],
@@ -17,7 +16,7 @@ git_bundles = [
   [ "git://github.com/tpope/vim-surround.git",         :plugin ],
   [ "git://github.com/tpope/vim-vividchalk.git",       :colors ],
   [ "git://github.com/nelstrom/vim-blackboard.git",    :colors ],
-  [ "git://github.com/tsaleh/vim-align.git",           :plugin ],
+  [ "git://github.com/godlygeek/tabular.git",          :plugin ],
   [ "git://github.com/tsaleh/vim-shoulda.git",         :plugin ],
   [ "git://github.com/tsaleh/vim-supertab.git",        :plugin ],
   [ "git://github.com/tsaleh/vim-tcomment.git",        :plugin ],

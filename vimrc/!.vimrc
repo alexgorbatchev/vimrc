@@ -53,7 +53,7 @@ set tabstop=4		  " tab is 4 spaces
 set noexpandtab       " use tabs
 
 source $HOME/.vim/vimrc/nerdtree.vimrc 
-source $HOME/.vim/vimrc/nerdcommenter.vimrc 
+source $HOME/.vim/vimrc/tabular.vimrc 
 source $HOME/.vim/vimrc/fuzzyfinder.vimrc 
 source $HOME/.vim/vimrc/conque.vimrc 
 source $HOME/.vim/vimrc/snipmate.vimrc 
