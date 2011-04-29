@@ -52,12 +52,6 @@ set shiftwidth=4
 set tabstop=4		  " tab is 4 spaces
 set noexpandtab       " use tabs
 
-source $HOME/.vim/vimrc/nerdtree.vimrc 
-source $HOME/.vim/vimrc/tabular.vimrc 
-source $HOME/.vim/vimrc/fuzzyfinder.vimrc 
-source $HOME/.vim/vimrc/conque.vimrc 
-source $HOME/.vim/vimrc/snipmate.vimrc 
-
 "
 " VIM extensions
 "
@@ -65,7 +59,13 @@ source $HOME/.vim/vimrc/keyboard.vimrc
 source $HOME/.vim/vimrc/file.vimrc 
 source $HOME/.vim/vimrc/windows.vimrc 
 source $HOME/.vim/vimrc/statusline.vimrc 
+source $HOME/.vim/vimrc/editing.vimrc 
 
+source $HOME/.vim/vimrc/tcomment.vimrc 
+source $HOME/.vim/vimrc/tabular.vimrc 
+source $HOME/.vim/vimrc/fuzzyfinder.vimrc 
+source $HOME/.vim/vimrc/conque.vimrc 
+source $HOME/.vim/vimrc/snipmate.vimrc 
 
 "
 " Project Specific

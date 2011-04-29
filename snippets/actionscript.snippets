@@ -5,19 +5,32 @@ snippet /**
 	 * @date `strftime("%Y/%m/%d")`
 	 */
 snippet var public
-	public var ${1:name} : ${2:Object};
+	public var ${1:name} : ${2:String};
 snippet var private
-	private var _${1:name} : ${2:Object};
+	private var _${1:name} : ${2:String};
 snippet var with getter
-	private var _${1:name} : ${2:Object};
+	private var _${1:name} : ${2:String};
 
 	public function get $1() : $2
 	{
 		return _$1;
 	}
 snippet var with getter and setter
-	private var _${1:name} : ${2:Object};
+	private var _${1:name} : ${2:String};
 
+	public function get $1() : $2
+	{
+		return _$1;
+	}
+
+	public function set $1(value : $2) : void
+	{
+		_$1 = value;
+	}
+snippet var inspectable
+	private var _${1:name} : ${2:String} = ${3:''};
+
+	[Inspectable(name='${4}', defaultValue=$3)]
 	public function get $1() : $2
 	{
 		return _$1;
@@ -29,31 +42,46 @@ snippet var with getter and setter
 	}
 snippet var MovieClip
 	public var ${1} : MovieClip;
-snippet func public function
+snippet var TextField
+	public var ${1} : TextField;
+snippet import MovieClip
+	import flash.display.MovieClip;
+snippet import TextField
+	import flash.text.TextField;
+snippet import Event
+	import flash.events.Event;
+snippet import MouseEvent
+	import flash.events.MouseEvent;
+snippet fun public
 	public function ${1:name}(${2}) : ${3:void}
 	{
 		${4}
 	}
-snippet func private function
+snippet fun private
 	private function ${1:name}(${2}) : ${3:void}
 	{
 		${4}
 	}
-snippet func protected function
+snippet fun protected
 	protected function ${1:name}(${2}) : ${3:void}
 	{
 		${4}
 	}
-snippet func anonymous function
+snippet fun anonymous
 	function(${1}) : void
 	{
 		${2}
 	}
-snippet func closure
+snippet fun closure
 	(function({$1:args}) : void
 	{
 		{$2}
 	})({$1:args});
+snippet fun as property
+	${1:name}: function(${2})
+	{
+		${4}
+	}${3:,}
 snippet if
 	if(${1:true})
 	{
@@ -86,16 +114,11 @@ snippet case
 		break;
 	${3}
 snippet for
-	for(var ${2:i} = 0; $2 < ${1:list}.length; $2${3:++})
+	for(var $2 = 0; ${1:i} < ${2:list}.length; $1++)
 	{
-		var item : ${4:Object} = $1[$2];
+		var item : ${4:String} = $2[$1];
 		${5}
 	}
-snippet :f
-	${1:method_name}: function(${2:attribute})
-	{
-		${4}
-	}${3:,}
 snippet setTimeout
 	setTimeout(function() : void
 		{

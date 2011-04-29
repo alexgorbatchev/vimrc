@@ -1,6 +1,5 @@
 let g:fuf_maxMenuWidth = 150
-" open files in tabs by default
-let g:fuf_keyOpenTabpage = '<CR>'
+"let g:fuf_keyOpenTabpage = '<CR>' " open files in tabs by default
 
 "
 " With modifications from http://efiquest.org/2010-09-24/49/

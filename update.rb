@@ -3,7 +3,6 @@
 git_bundles = [ 
   # [ "git://github.com/astashov/vim-ruby-debugger.git", :plugin ],
   [ "git://github.com/msanders/snipmate.vim.git",      :plugin ],
-  [ "git://github.com/scrooloose/nerdcommenter.git",   :plugin ],
   [ "git://github.com/timcharper/textile.vim.git",     :syntax ],
   # [ "git://github.com/tpope/vim-cucumber.git",         :syntax ],
   # [ "git://github.com/tpope/vim-fugitive.git",         :plugin ],
