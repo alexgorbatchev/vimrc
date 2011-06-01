@@ -1,5 +1,7 @@
 let mapleader=","
 
+" maximize window
+nmap <S-F12> :set lines=999 columns=999<CR>
 
 " toggle wrap
 nmap <leader>w :set wrap<CR>
