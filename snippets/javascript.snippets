@@ -1,33 +1,34 @@
-snippet clo
-	(function({$1:args})
+snippet /**
+	/**
+	 * ${1}
+	 * @author agorbatchev
+	 * @date `strftime("%Y/%m/%d")`
+	 */
+snippet fun public
+	public function ${1:name}(${2})
 	{
-		{$2:// body...}
-	})({$1:args});
-# Prototype
-snippet proto
-	${1:class_name}.prototype.${2:method_name} = function(${3:first_argument})
-	{
-		${4:// body...}
-	};
-# Function
-snippet fun
-	function ${1:function_name}(${2:argument})
-	{
-		${3:// body...}
+		${4}
 	}
-# Anonymous Function
-snippet f
+snippet fun anonymous
 	function(${1})
 	{
 		${2}
-	};
-# if
+	}
+snippet fun closure
+	(function(${1:args})
+	{
+		${2}
+	})($1);
+snippet fun as property
+	${1:name}: function(${2})
+	{
+		${4}
+	}${3:,}
 snippet if
-	if (${1:true})
+	if(${1:true})
 	{
 		${2}
 	}
-# if ... else
 snippet ife
 	if(${1:true})
 	{
@@ -37,45 +38,35 @@ snippet ife
 	{
 		${3}
 	}
-# tertiary conditional
 snippet ?
-	${1:/* condition */} ? ${2:a} : ${3:b};
-# switch
+	${1} ? ${2:a} : ${3:b};
 snippet switch
-	switch(${1:expression})
+	switch(${1})
 	{
-		case ${3:case}:
-			${4:// code}
+		case ${2}:
+			${3:// code}
 			break;
-		${5}
+		${4}
 		default:
-			${2:// code}
+			${5}
 	}
-# case
 snippet case
 	case ${1:case}:
 		${2:// code}
 		break;
 	${3}
-# for (...) {...}
 snippet for
-	for(var ${2:i} = 0; $2 < ${1:Things}.length; $2${3:++})
+	for(var $1 = 0; ${1:i} < ${2:list}.length; $1++)
 	{
-		${4:$1[$2]}
-	};
-# for (...) {...} (Improved Native For-Loop)
-snippet forr
-	for(var ${2:i} = ${1:Things}.length - 1; $2 >= 0; $2${3:--})
-	{
-		${4:$1[$2]}
-	};
-# Object Method
-snippet :f
-	${1:method_name}: function(${2:attribute})
-	{
+		var item = $2[$1];
 		${4}
-	}${3:,}
-# setTimeout function
-snippet timeout
-	setTimeout(function() { ${3} }${2}, ${1:10});
+	}
+snippet setTimeout
+	setTimeout(function()
+		{
+			${2}
+		},
+		${1:100}
+	);
+
 

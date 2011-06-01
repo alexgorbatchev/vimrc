@@ -46,8 +46,14 @@ snippet var TextField
 	public var ${1} : TextField;
 snippet import MovieClip
 	import flash.display.MovieClip;
+snippet import DisplayObject
+	import flash.display.DisplayObject;
+snippet import DisplayObjectContainer
+	import flash.display.DisplayObjectContainer;
 snippet import TextField
 	import flash.text.TextField;
+snippet import TextFormat
+	import flash.text.TextFormat;
 snippet import Event
 	import flash.events.Event;
 snippet import MouseEvent
@@ -73,10 +79,10 @@ snippet fun anonymous
 		${2}
 	}
 snippet fun closure
-	(function({$1:args}) : void
+	(function(${1:args}) : void
 	{
-		{$2}
-	})({$1:args});
+		${2}
+	})($1);
 snippet fun as property
 	${1:name}: function(${2})
 	{
@@ -114,15 +120,15 @@ snippet case
 		break;
 	${3}
 snippet for
-	for(var $2 = 0; ${1:i} < ${2:list}.length; $1++)
+	for(var $1 : Number = 0; ${1:i} < ${2:list}.length; $1++)
 	{
-		var item : ${4:String} = $2[$1];
-		${5}
+		var item : ${3:String} = $2[$1];
+		${4}
 	}
 snippet setTimeout
 	setTimeout(function() : void
 		{
-			${3}
+			${2}
 		},
 		${1:100}
 	);
