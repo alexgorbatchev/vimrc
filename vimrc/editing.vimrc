@@ -22,3 +22,5 @@ function! AutoHighlightToggle()
   endif
 endfunction
 
+" In editing mode Ctrl-d deletes word under cursor
+imap <C-d> <C-[>diwi
