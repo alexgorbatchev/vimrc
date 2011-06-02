@@ -26,6 +26,7 @@ git_bundles = [
   [ "git://github.com/vim-scripts/Flex-4.git"           , :syntax ],
   [ "git://github.com/kchmck/vim-coffee-script.git"     , :syntax ],
   [ "git://github.com/wavded/vim-stylus.git"            , :syntax ],
+  [ "git://github.com/statianzo/vim-jade.git"           , :syntax ],
 ]
 
 vim_org_scripts = [
