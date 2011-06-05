@@ -17,7 +17,6 @@ set go+=c 													" disable visual dialogs
 set guifont=Bitstream\ Vera\ Sans\ Mono:h14 				" My font!
 set number 													" Show line numbers
 set cursorline 												" Highlight current line
-set lines=999 columns=999 									" Maximize window size
 set ignorecase 												" Search is case insensitive
 set list listchars=tab:»\ ,eol:¶
 set incsearch 												" find the next match as we type the search
