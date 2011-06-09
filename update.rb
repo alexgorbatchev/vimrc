@@ -6,9 +6,18 @@ git_bundles = [
   # [ "git://github.com/motemen/git-vim.git"             , :plugin ],
   # [ "git://github.com/tpope/vim-rails.git"             , :plugin ],
   
+  # neocomplcache performs keyword completion by making a cache of keyword in
+  # buffer. Because I implemented it by paying own expenses unlike the keyword
+  # completion including the Vim composing type, neocomplcache can be customized
+  # flexibly. Unfortunately neocomplcache may use more memory than other
+  # plugins.
+  # [ "git://github.com/Shougo/neocomplcache.git" , :plugin ],
+
   # snipMate.vim aims to be a concise vim script that implements some of 
-  # TextMate's snippets features in Vim
-  [ "git://github.com/msanders/snipmate.vim.git"         , :plugin ],
+  # TextMate's snippets features in Vim (with dependencies).
+  [ "git://github.com/garbas/vim-snipmate.git"          , :plugin ],
+  [ "git://github.com/MarcWeber/vim-addon-mw-utils.git" , :plugin ],
+  [ "git://github.com/tomtom/tlib_vim.git"              , :plugin ],
 
   # I'm not going to lie to you; fugitive.vim may very well be the best Git
   # wrapper of all time. Check out these features:
@@ -52,11 +61,10 @@ git_bundles = [
   # needs (:help ins-completion).
   [ "git://github.com/ervandew/supertab.git" , :plugin ],
 
-  [ "git://github.com/tsaleh/vim-tcomment.git"           , :plugin ],
+  [ "git://github.com/vim-scripts/tComment.git"          , :plugin ],
   # [ "git://github.com/sjbach/lusty.git"                , :plugin ],
-  [ "git://github.com/rson/vim-conque.git"               , :plugin ],
   [ "git://github.com/vim-scripts/YankRing.vim.git"      , :plugin ],
-  [ "git://github.com/slack/vim-fuzzyfinder.git"         , :plugin ],
+  [ "git://github.com/vim-scripts/FuzzyFinder.git"       , :plugin ],
   [ "git://github.com/vim-scripts/JavaScript-Indent.git" , :plugin ],
 
   # This plugin redefines 6 search commands (/,?,n,N,*,#). At every

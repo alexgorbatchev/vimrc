@@ -4,14 +4,8 @@ call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 filetype plugin on
 
-if &t_Co >= 256 || has("gui_running")
-   colorscheme blackboard
-endif
-
-" switch syntax highlighting on, when the terminal has colors
-if &t_Co > 2 || has("gui_running")
-   syntax on
-endif
+set t_Co=256
+colorscheme railscasts
 
 set go+=c 													" disable visual dialogs
 set guifont=Bitstream\ Vera\ Sans\ Mono:h14 				" My font!
