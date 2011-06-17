@@ -40,5 +40,32 @@ imap <C-d> <C-[>diwi
 "     }
 " }
 "
-:nnoremap zfv vi{<DOWN>o<UP><UP>o
+nnoremap zfv vi{<DOWN>o<UP><UP>o
+
+" surround word with ['']
+nnoremap zsa' bi['<ESC>ea']<ESC>
+
+" surround word with [""]
+nnoremap zsa" bi["<ESC>ea"]<ESC>
+
+" surround word with ''
+nnoremap zs' bi'<ESC>ea'<ESC>
+
+" surround word with ""
+nnoremap zs" bi"<ESC>ea"<ESC>
+
+" surround word with []
+nnoremap zs[ bi[<ESC>ea]<ESC>
+"
+" surround word with ()
+nnoremap zs( bi(<ESC>ea)<ESC>
+
+" adds space between // and next word if there isn't one
+nnoremap zc/ ma:%s#^\(\s*\)//\(\w\)#\1// \2#g<CR>`a
+
+" deletes matching/balanced braces
+nnoremap zdb %x``x
+
+" replaced word with _word, good for making public variables private
+nnoremap zc_ ma:%s/\<<C-r><C-w>\>/_<C-r><C-w>/g<CR>`a
 
