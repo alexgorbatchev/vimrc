@@ -95,6 +95,7 @@ git_bundles = [
   [ "git://github.com/vim-scripts/actionscript.vim--Leider.git" , :syntax ],
   [ "git://github.com/othree/javascript-syntax.vim.git"         , :syntax ],
   [ "git://github.com/vim-scripts/jQuery.git"                   , :syntax ],
+  [ "git://github.com/lunaru/vim-less.git"                      , :syntax ],
 ]
 
 vim_org_scripts = [
