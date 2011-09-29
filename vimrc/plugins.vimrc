@@ -119,6 +119,11 @@ endfunction
 "-------------------------------------------------------------------------------- 
 " ShowMarks
 "-------------------------------------------------------------------------------- 
+let g:showmarks_ignore_type = "hprqm"
+let g:showmarks_include = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.'`^<>[]{}\""
+let g:showmarks_textlower = "`\t"
+let g:showmarks_textupper = "`\t"
+let g:showmarks_textother = "`\t"
 " If +signs is not in VIM, fake Showmark being loaded so it doesn't whine
 if has("signs") == 0
 	let loaded_showmarks = 1
