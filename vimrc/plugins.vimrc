@@ -168,3 +168,10 @@ nnoremap <leader>gR :Gread<CR>
 nnoremap <leader>gg :Git 
 nnoremap <leader>gd :Gdiff<CR>
 
+
+
+"-------------------------------------------------------------------------------- 
+" YankRing
+"-------------------------------------------------------------------------------- 
+nnoremap <leader>y :YRShow<CR>
+

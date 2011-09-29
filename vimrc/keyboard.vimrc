@@ -14,8 +14,9 @@ map <silent> <C-h> :wincmd h<CR>
 map <silent> <C-l> :wincmd l<CR>
 
 " Make Alt-Command-Left/Right toggle between tabs
-nmap <A-D-left> :tabprev<CR>
-nmap <A-D-right> :tabnext<CR>
+nmap <C-N> :tabnew<CR>
+nmap <C-H> :tabprev<CR>
+nmap <C-L> :tabnext<CR>
 
 " visual shifting (builtin-repeat)
 vnoremap < <gv
@@ -34,9 +35,6 @@ map <leader>cd :cd %:p:h<CR>:pwd<CR>
 
 " Reload .vimrc
 nmap <S-F10> :source $MYVIMRC<CR>
-
-" YankRing hookup
-nnoremap <leader>y :YRShow<CR>
 
 " disable arrow keys
 " map <up> <nop>
