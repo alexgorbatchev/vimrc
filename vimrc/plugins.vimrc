@@ -129,3 +129,18 @@ if has("signs") == 0
 	let loaded_showmarks = 1
 endif
 
+
+
+"-------------------------------------------------------------------------------- 
+" NERD Tree
+"-------------------------------------------------------------------------------- 
+autocmd VimEnter * wincmd p " cursor to right panel instead of NERDTree
+
+
+
+"-------------------------------------------------------------------------------- 
+" Tag Bar
+"-------------------------------------------------------------------------------- 
+map <leader>tb :TagbarToggle<CR>
+let g:tagbar_ctags_bin = "/usr/local/Cellar/ctags/5.8/bin/ctags"
+

@@ -1,6 +1,13 @@
 #!/usr/bin/env ruby
 
 git_bundles = [ 
+  # TagBar
+  [ "git://github.com/majutsushi/tagbar", :plugin ],
+
+  # NERD tree and plugin to help with tabs
+  [ "git://github.com/jistr/vim-nerdtree-tabs.git" , :plugin ],
+  [ "git://github.com/scrooloose/nerdtree.git"     , :plugin ],
+
   # [ "git://github.com/astashov/vim-ruby-debugger.git"  , :plugin ],
   # [ "git://github.com/tpope/vim-git.git"               , :plugin ],
   # [ "git://github.com/motemen/git-vim.git"             , :plugin ],
