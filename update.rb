@@ -61,6 +61,9 @@ git_bundles = [
   # needs (:help ins-completion).
   [ "git://github.com/ervandew/supertab.git" , :plugin ],
 
+  # Shows marks
+  [ "git://github.com/garbas/vim-showmarks.git", :plugin ],
+
   [ "git://github.com/vim-scripts/tComment.git"          , :plugin ],
   # [ "git://github.com/sjbach/lusty.git"                , :plugin ],
   [ "git://github.com/vim-scripts/YankRing.vim.git"      , :plugin ],

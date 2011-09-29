@@ -69,3 +69,6 @@ nnoremap zdb %x``x
 " replaced word with _word, good for making public variables private
 nnoremap zc_ ma:%s/\<<C-r><C-w>\>/_<C-r><C-w>/g<CR>`a
 
+" replaces function name() with name: function()
+nnoremap zcf :s/function \(\w\+\)/\1: function/<CR>`a
+
