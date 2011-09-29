@@ -14,9 +14,9 @@ map <silent> <C-h> :wincmd h<CR>
 map <silent> <C-l> :wincmd l<CR>
 
 " Make Alt-Command-Left/Right toggle between tabs
-nmap <C-N> :tabnew<CR>
-nmap <C-H> :tabprev<CR>
-nmap <C-L> :tabnext<CR>
+nmap <silent> <C-t> :tabnew<CR>
+nmap <silent> <C-[> :tabprev<CR>
+nmap <silent> <C-]> :tabnext<CR>
 
 " visual shifting (builtin-repeat)
 vnoremap < <gv
