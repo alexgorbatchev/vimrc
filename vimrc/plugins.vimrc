@@ -141,6 +141,7 @@ endif
 "-------------------------------------------------------------------------------- 
 " NERD Tree
 "-------------------------------------------------------------------------------- 
+autocmd VimEnter * NERDTree " open it by default
 autocmd VimEnter * wincmd p " cursor to right panel instead of NERDTree
 
 
