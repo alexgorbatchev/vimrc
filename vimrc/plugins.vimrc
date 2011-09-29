@@ -21,7 +21,8 @@ if !exists('g:snipMate')
 endif
 
 let g:snipMate['snippet_dirs'] = [ '~/.vim/snippets' ]
-"funcref#Function('return "~/.vim/snippets"')
+" reloads all snipmate snippets
+map <leader>smr :call ReloadAllSnippets()<CR>
 
 
 
@@ -71,6 +72,11 @@ endfunction
 let g:fuf_maxMenuWidth = 150
 "let g:fuf_keyOpenTabpage = '<CR>' " open files in tabs by default
 
+map <leader>ff :call ProjectFuzzyFind()<CR>
+map <leader>fb :FufBuffer<CR>
+map <leader>fq :FufQuickfix<CR>
+map <leader>fl :FufLine<CR>
+
 "
 " With modifications from http://efiquest.org/2010-09-24/49/
 "              
@@ -114,6 +120,7 @@ function! ProjectFuzzyFind()
     :FufFileWithCurrentBufferDir 
   endif
 endfunction
+
 
 
 "-------------------------------------------------------------------------------- 
