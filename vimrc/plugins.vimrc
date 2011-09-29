@@ -151,3 +151,18 @@ autocmd VimEnter * wincmd p " cursor to right panel instead of NERDTree
 map <leader>tb :TagbarToggle<CR>
 let g:tagbar_ctags_bin = "/usr/local/Cellar/ctags/5.8/bin/ctags"
 
+
+
+"-------------------------------------------------------------------------------- 
+" Fugitive
+"-------------------------------------------------------------------------------- 
+nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gr :Gremove<CR>
+nnoremap <leader>gl :Glog<CR>
+nnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>gm :Gmove 
+nnoremap <leader>gp :Ggrep 
+nnoremap <leader>gR :Gread<CR>
+nnoremap <leader>gg :Git 
+nnoremap <leader>gd :Gdiff<CR>
+
