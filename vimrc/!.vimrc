@@ -7,18 +7,17 @@ filetype plugin on
 set t_Co=256
 
 if has("gui_running")
-	set cursorline											" Highlight current line
-else
-	colorscheme darkblue
 endif
 
 if has("gui_macvim")
-	colorscheme railscasts
 	set go+=c 												" disable visual dialogs
-	set guifont=Bitstream\ Vera\ Sans\ Mono:h14 			" My font!
+	set guifont=Bitstream\ Vera\ Sans\ Mono:h14 			" My font! YES!
 	set guioptions-=T 										" hide gvim's toolbar by default
 endif
 
+colorscheme railscasts
+
+set cursorline												" Highlight current line
 set number 													" Show line numbers
 set ignorecase 												" Search is case insensitive
 set list listchars=tab:»\ ,eol:¶
@@ -54,9 +53,6 @@ set shiftwidth=4
 set tabstop=4		  " tab is 4 spaces
 set noexpandtab       " use tabs
 
-"
-" VIM extensions
-"
 source $HOME/.vim/vimrc/keyboard.vimrc 
 source $HOME/.vim/vimrc/file.vimrc 
 source $HOME/.vim/vimrc/editing.vimrc 
