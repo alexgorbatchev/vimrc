@@ -144,13 +144,15 @@ endif
 autocmd VimEnter * NERDTree " open it by default
 autocmd VimEnter * wincmd p " cursor to right panel instead of NERDTree
 
+map <leader>ncd :cd %:p:h<CR>:NERDTree %:p:h<CR>:wincmd p<CR>:pwd<CR>
+noremap <silent> <leader>n :NERDTreeToggle<CR>:wincmd p<CR>
+
 
 
 "-------------------------------------------------------------------------------- 
 " Tag Bar
 "-------------------------------------------------------------------------------- 
 map <leader>tb :TagbarToggle<CR>
-noremap <silent> <leader>n :NERDTreeToggle<CR>
 let g:tagbar_ctags_bin = "/usr/local/Cellar/ctags/5.8/bin/ctags"
 
 
