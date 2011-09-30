@@ -1,6 +1,13 @@
 #!/usr/bin/env ruby
 
 git_bundles = [ 
+  # TagBar
+  [ "git://github.com/majutsushi/tagbar", :plugin ],
+
+  # NERD tree and plugin to help with tabs
+  [ "git://github.com/jistr/vim-nerdtree-tabs.git" , :plugin ],
+  [ "git://github.com/scrooloose/nerdtree.git"     , :plugin ],
+
   # [ "git://github.com/astashov/vim-ruby-debugger.git"  , :plugin ],
   # [ "git://github.com/tpope/vim-git.git"               , :plugin ],
   # [ "git://github.com/motemen/git-vim.git"             , :plugin ],
@@ -60,6 +67,9 @@ git_bundles = [
   # Supertab aims to provide tab completion to satisfy all your insert completion 
   # needs (:help ins-completion).
   [ "git://github.com/ervandew/supertab.git" , :plugin ],
+
+  # Shows marks
+  [ "git://github.com/garbas/vim-showmarks.git", :plugin ],
 
   [ "git://github.com/vim-scripts/tComment.git"          , :plugin ],
   # [ "git://github.com/sjbach/lusty.git"                , :plugin ],

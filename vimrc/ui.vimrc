@@ -1,3 +1,8 @@
+set winminheight=0
+
+"
+" STATUS LINE
+"
 " Always hide the statusline
 set laststatus=2
 
@@ -19,4 +24,5 @@ function! HasPaste()
         return ''
     endif
 endfunction
+
 
