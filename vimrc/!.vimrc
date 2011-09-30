@@ -15,7 +15,7 @@ if has("gui_macvim")
 	set guioptions-=T 										" hide gvim's toolbar by default
 endif
 
-colorscheme jellyx
+colorscheme railscasts
 syntax on
 
 set cursorline												" Highlight current line

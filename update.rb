@@ -89,7 +89,6 @@ git_bundles = [
   # for programming in Vim.
   [ "git://github.com/vim-scripts/L9.git" , :plugin ],
 
-  [ "git://github.com/guns/jellyx.vim.git"        , :colors ],
   [ "git://github.com/jgdavey/vim-railscasts.git" , :colors ],
 
   [ "git://github.com/timcharper/textile.vim.git"               , :syntax ],
