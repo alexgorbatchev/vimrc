@@ -144,7 +144,7 @@ endif
 autocmd VimEnter * NERDTree " open it by default
 autocmd VimEnter * wincmd p " cursor to right panel instead of NERDTree
 
-map <leader>ncd :cd %:p:h<CR>:NERDTree %:p:h<CR>:wincmd p<CR>:pwd<CR>
+map <leader>nf :NERDTreeFind<CR>:wincmd p<CR>
 noremap <silent> <leader>n :NERDTreeToggle<CR>:wincmd p<CR>
 
 
