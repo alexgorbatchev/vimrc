@@ -16,6 +16,7 @@ if has("gui_macvim")
 endif
 
 colorscheme railscasts
+syntax on
 
 set cursorline												" Highlight current line
 set number 													" Show line numbers
