@@ -18,6 +18,7 @@ endif
 colorscheme railscasts
 syntax on
 
+set grepprg=ack												" Using ACK for grep
 set cursorline												" Highlight current line
 set number 													" Show line numbers
 set ignorecase 												" Search is case insensitive
