@@ -91,6 +91,7 @@ git_bundles = [
 
   [ "git://github.com/jgdavey/vim-railscasts.git" , :colors ],
 
+  [ "git://github.com/groenewege/vim-less.git"                  , :syntax ],
   [ "git://github.com/timcharper/textile.vim.git"               , :syntax ],
   [ "git://github.com/tpope/vim-cucumber.git"                   , :syntax ],
   [ "git://github.com/tpope/vim-haml.git"                       , :syntax ],
