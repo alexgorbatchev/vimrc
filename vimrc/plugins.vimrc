@@ -1,8 +1,7 @@
 "-------------------------------------------------------------------------------- 
 " NerdCommenter
 "-------------------------------------------------------------------------------- 
-nmap <leader>/ :TComment<CR>
-vmap <leader>/ :TComment<CR>
+map <leader>/ :TComment<CR>
 
 autocmd BufNewFile,BufRead *.as call ConfigureActionScript()
 
@@ -29,12 +28,9 @@ map <leader>smr :call ReloadAllSnippets()<CR>
 "-------------------------------------------------------------------------------- 
 " Tabular
 "-------------------------------------------------------------------------------- 
-nmap <leader>t= :Tabularize /^[^=]*\zs=<CR>
-vmap <leader>t= :Tabularize /^[^=]*\zs=<CR>
-nmap <leader>t: :Tabularize /^[^:]*\zs:<CR>
-vmap <leader>t: :Tabularize /^[^:]*\zs:<CR>
-nmap <leader>t, :Tabularize /^[^,]*\zs,<CR>
-vmap <leader>t, :Tabularize /^[^,]*\zs,<CR>
+map <leader>t= :Tabularize /^[^=]*\zs=<CR>
+map <leader>t: :Tabularize /^[^:]*\zs:<CR>
+map <leader>t, :Tabularize /^[^,]*\zs,<CR>
 
 " inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
  
@@ -141,8 +137,8 @@ endif
 "-------------------------------------------------------------------------------- 
 " NERD Tree
 "-------------------------------------------------------------------------------- 
-autocmd VimEnter * NERDTree " open it by default
-autocmd VimEnter * wincmd p " cursor to right panel instead of NERDTree
+" autocmd VimEnter * NERDTree " open it by default
+" autocmd VimEnter * wincmd p " cursor to right panel instead of NERDTree
 
 map <leader>nf :NERDTreeFind<CR>:wincmd p<CR>
 noremap <silent> <leader>n :NERDTreeToggle<CR>:wincmd p<CR>

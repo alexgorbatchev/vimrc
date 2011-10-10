@@ -23,12 +23,11 @@ vnoremap < <gv
 vnoremap > >gv
 
 " search helpers
-nmap <leader>fw :execute "grep /" . expand("<cword>") . "/j **" <Bar> :FufQuickfix<CR>
-nmap <leader>g :grep // **/* <Bar> :FufQuickfix<C-LEFT><C-LEFT><C-LEFT><C-LEFT><RIGHT>
+nmap <leader>fw :execute "grep \"" . expand("<cword>") . "\" -ai" <Bar> :FufQuickfix<CR>
+nmap <leader>g :grep "" -ai <Bar> :FufQuickfix<C-LEFT><C-LEFT><C-LEFT><C-LEFT><RIGHT>
 
-" Gets the word under the cursor, and searches for it in the current directory 
-" and all subdirectories, opening the quickfix window when done
-nmap <Leader>r :%s/\<<C-r><C-w>\>//g<Left><Left>
+" Shortcut for search and replace with the current word under the cursor
+nmap <Leader>r :%s/\<<C-r><C-w>\>//g<LEFT><LEFT>
 
 " When pressing <leader>cd switch to the directory of the open buffer
 map <leader>cd :cd %:p:h<CR>:pwd<CR>
