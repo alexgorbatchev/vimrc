@@ -106,12 +106,12 @@ function! ProjectFuzzyFind()
     endfor
  
     " agorbatchev: cd into the dir
-    execute('cd "'.curdir.'"')
+    :cd `=curdir`
     " agorbatchev: augment curdir with ~/ if we are somewhere inside user's home directory
     let prompt = substitute(substitute(curdir.'/', $HOME, '~/', 'g'), '//', '/', 'g')
     call fuf#givenfile#launch('', 0, prompt, files)
   else
-    execute('cd "'.origcurdir.'"')
+    :cd `=curdir`
     " agorbatchev: if no .fuzzyfinder file found, simply run :FufFile
     :FufFileWithCurrentBufferDir 
   endif

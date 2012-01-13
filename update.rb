@@ -71,6 +71,9 @@ git_bundles = [
   # Shows marks
   [ "git://github.com/garbas/vim-showmarks.git", :plugin ],
 
+  # The ultimate vim statusline utility
+  [ "git://github.com/Lokaltog/vim-powerline.git", :plugin ],
+
   [ "git://github.com/vim-scripts/tComment.git"          , :plugin ],
   # [ "git://github.com/sjbach/lusty.git"                , :plugin ],
   [ "git://github.com/vim-scripts/YankRing.vim.git"      , :plugin ],
