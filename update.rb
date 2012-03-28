@@ -66,10 +66,11 @@ git_bundles = [
 
   # Supertab aims to provide tab completion to satisfy all your insert completion 
   # needs (:help ins-completion).
-  [ "git://github.com/ervandew/supertab.git" , :plugin ],
+  # [ "git://github.com/ervandew/supertab.git" , :plugin ],
+  [ "git://github.com/Shougo/neocomplcache.git", :plugin ],
 
   # Shows marks
-  [ "git://github.com/garbas/vim-showmarks.git", :plugin ],
+  # [ "git://github.com/garbas/vim-showmarks.git", :plugin ],
 
   # The ultimate vim statusline utility
   [ "git://github.com/Lokaltog/vim-powerline.git", :plugin ],
@@ -100,7 +101,7 @@ git_bundles = [
   [ "git://github.com/tpope/vim-haml.git"                       , :syntax ],
   [ "git://github.com/tpope/vim-markdown.git"                   , :syntax ],
   [ "git://github.com/vim-ruby/vim-ruby.git"                    , :syntax ],
-  [ "git://github.com/vim-scripts/Flex-4.git"                   , :syntax ],
+  # [ "git://github.com/vim-scripts/Flex-4.git"                   , :syntax ],
   [ "git://github.com/kchmck/vim-coffee-script.git"             , :syntax ],
   [ "git://github.com/wavded/vim-stylus.git"                    , :syntax ],
   [ "git://github.com/statianzo/vim-jade.git"                   , :syntax ],
