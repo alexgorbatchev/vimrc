@@ -23,8 +23,8 @@ vnoremap < <gv
 vnoremap > >gv
 
 " search helpers
-nmap <leader>fw :execute "grep \"" . expand("<cword>") . "\" -ai" <Bar> :FufQuickfix<CR>
-nmap <leader>g :grep "" -ai <Bar> :FufQuickfix<C-LEFT><C-LEFT><C-LEFT><C-LEFT><RIGHT>
+nmap <leader>fw :execute "grep \"" . expand("<cword>") . "\" -ai" <Bar> :CtrlPQuickfix<CR>
+nmap <leader>g :grep "" -ai <Bar> :CtrlPQuickfix<C-LEFT><C-LEFT><C-LEFT><C-LEFT><RIGHT>
 
 " Shortcut for search and replace with the current word under the cursor
 nmap <Leader>r :%s/\<<C-r><C-w>\>//g<LEFT><LEFT>

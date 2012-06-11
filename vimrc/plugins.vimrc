@@ -46,94 +46,22 @@ map <leader>t, :Tabularize /^[^,]*\zs,<CR>
 " endfunction
 
 
-"
-"-------------------------------------------------------------------------------- 
-" TComment
-"-------------------------------------------------------------------------------- 
-nmap <leader>/ :TComment<CR>
-vmap <leader>/ :TComment<CR>
-
-autocmd BufNewFile,BufRead *.as call ConfigureActionScript()
-
-function! ConfigureActionScript()
-	nmap <leader>/ :TComment //\ <CR>
-	vmap <leader>/ :TComment //\ <CR>
-endfunction
-
-
 
 "-------------------------------------------------------------------------------- 
-" Fuzzy Finder
+" CtrlP
 "-------------------------------------------------------------------------------- 
-let g:fuf_maxMenuWidth = 150
-"let g:fuf_keyOpenTabpage = '<CR>' " open files in tabs by default
-
-map <leader>ff :call ProjectFuzzyFind()<CR>
-map <leader>fb :FufBuffer<CR>
-map <leader>fq :FufQuickfix<CR>
-map <leader>fl :FufLine<CR>
-
-"
-" With modifications from http://efiquest.org/2010-09-24/49/
-"              
-" Recursively looks for .fuzzyfile and uses lines from it
-" to add to the search path. For example:
-"
-" folder/sub/**
-" another/**
-" *
-"
-function! ProjectFuzzyFind()
-  let origcurdir = getcwd()
-  let curdir = origcurdir
-  let prevdir = ""
- 
-  while curdir != prevdir
-    if filereadable(".fuzzyfinder")
-      break
-    endif
-    cd ..
-    let prevdir = curdir
-    let curdir = getcwd()
-  endwhile
- 
-  if filereadable(".fuzzyfinder")
-    let items = readfile(".fuzzyfinder")
-    let files = []
-    for n in items
-      let globlist = glob(curdir.'/'.n)
-      let files += split(substitute(globlist, curdir.'/', '', 'g'), '\n')
-    endfor
- 
-    " agorbatchev: cd into the dir
-    :cd `=curdir`
-    " agorbatchev: augment curdir with ~/ if we are somewhere inside user's home directory
-    let prompt = substitute(substitute(curdir.'/', $HOME, '~/', 'g'), '//', '/', 'g')
-    call fuf#givenfile#launch('', 0, prompt, files)
-  else
-    :cd `=curdir`
-    " agorbatchev: if no .fuzzyfinder file found, simply run :FufFile
-    :FufFileWithCurrentBufferDir 
-  endif
-endfunction
-
-
-"-------------------------------------------------------------------------------- 
-" NERD Tree
-"-------------------------------------------------------------------------------- 
-" autocmd VimEnter * NERDTree " open it by default
-" autocmd VimEnter * wincmd p " cursor to right panel instead of NERDTree
-
-map <leader>nf :NERDTreeFind<CR>:wincmd p<CR>
-noremap <silent> <leader>n :NERDTreeToggle<CR>:wincmd p<CR>
-
-
-
-"-------------------------------------------------------------------------------- 
-" Tag Bar
-"-------------------------------------------------------------------------------- 
-map <leader>tb :TagbarToggle<CR>
-let g:tagbar_ctags_bin = "/usr/local/Cellar/ctags/5.8/bin/ctags"
+map <leader>fr :CtrlPClearAllCaches<CR>
+map <leader>ff :CtrlP<CR>
+map <leader>fm :CtrlPMRU<CR>
+map <leader>fl :CtrlPLine<CR>
+map <leader>fq :CtrlPQuickfix<CR>
+map <leader>fc :CtrlPChangeAll<CR>
+map <leader>fb :CtrlPBuffer<CR>
+let g:ctrlp_custom_ignore = 'node_modules'
+" let g:ctrlp_by_filename = 1
+let g:ctrlp_max_height = 30
+let g:ctrlp_dotfiles = 0
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/node_modules/*
 
 
 
