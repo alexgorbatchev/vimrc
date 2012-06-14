@@ -18,6 +18,8 @@ endif
 colorscheme railscasts
 syntax on
 
+set exrc													" enable per-directory .vimrc files
+set secure													" disable unsafe commands in local .vimrc files
 set grepprg=ack												" Using ACK for grep
 set cursorline												" Highlight current line
 set number 													" Show line numbers

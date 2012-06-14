@@ -62,7 +62,7 @@ let g:ctrlp_custom_ignore = 'node_modules'
 let g:ctrlp_max_height = 30
 let g:ctrlp_dotfiles = 0
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/node_modules/*
-
+let g:ctrlp_custom_ignore = 'node_modules\|\.hg$\'
 
 
 "-------------------------------------------------------------------------------- 
