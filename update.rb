@@ -122,7 +122,7 @@ Dir["*"].each {|d| FileUtils.rm_rf d }
 git_bundles.each do |url, script_type|
   dir = "#{script_type}-#{url.split('/').last.gsub(/(^vim-)|(-vim)|(\.vim)|(\.git$)/, '')}"
   puts "  Unpacking #{url} into #{dir}"
-  `git clone #{url} #{dir}`
+  `git clone --depth 1 #{url} #{dir}`
   FileUtils.rm_rf(File.join(dir, ".git"))
 end
 
