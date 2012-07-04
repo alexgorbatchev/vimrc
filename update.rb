@@ -18,8 +18,8 @@ git_bundles = [
   # snipMate.vim aims to be a concise vim script that implements some of 
   # TextMate's snippets features in Vim (with dependencies).
   [ "git://github.com/garbas/vim-snipmate.git"          , :plugin ],
-  [ "git://github.com/MarcWeber/vim-addon-mw-utils.git" , :plugin ],
-  [ "git://github.com/tomtom/tlib_vim.git"              , :plugin ],
+  [ "git://github.com/MarcWeber/vim-addon-mw-utils.git" , :dependency ],
+  [ "git://github.com/tomtom/tlib_vim.git"              , :dependency ],
 
   # I'm not going to lie to you; fugitive.vim may very well be the best Git
   # wrapper of all time. Check out these features:

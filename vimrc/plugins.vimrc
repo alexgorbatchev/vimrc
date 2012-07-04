@@ -19,7 +19,7 @@ if !exists('g:snipMate')
   let g:snipMate = {}
 endif
 
-let g:snipMate['snippet_dirs'] = [ '~/.vim/snippets' ]
+let g:snipMate['snippet_dirs'] = [ '~/.vim' ]
 " reloads all snipmate snippets
 map <leader>smr :call ReloadAllSnippets()<CR>
 
