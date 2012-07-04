@@ -4,8 +4,17 @@ snippet /**
 	 * @author agorbatchev
 	 * @date `strftime("%Y/%m/%d")`
 	 */
+snippet /***
+	/**
+	 * ${1}
+	 *
+	 * @signature ${2}
+	 * @id ${3}
+	 * @author agorbatchev
+	 * @date `strftime("%Y/%m/%d")`
+	 */
 snippet fun public
-	public function ${1:name}(${2})
+	function ${1:name}(${2})
 	{
 		${4}
 	}
@@ -61,7 +70,7 @@ snippet for
 		var item = $2[$1];
 		${4}
 	}
-snippet setTimeout
+snippet setT
 	setTimeout(function()
 		{
 			${2}
