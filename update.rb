@@ -2,7 +2,6 @@
 
 git_bundles = [ 
   [ "git://github.com/kien/ctrlp.vim.git", :plugin ],
-  [ "git://github.com/aklt/vim-substitute.git", :plugin ],
 
   # [ "git://github.com/astashov/vim-ruby-debugger.git"  , :plugin ],
   # [ "git://github.com/tpope/vim-git.git"               , :plugin ],
