@@ -1,0 +1,72 @@
+snippet /**
+	/**
+	 * ${1}
+	 * @author agorbatchev
+	 * @date `strftime("%Y/%m/%d")`
+	 */
+snippet fun public
+	public function ${1:name}(${2})
+	{
+		${4}
+	}
+snippet fun anonymous
+	function(${1})
+	{
+		${2}
+	}
+snippet fun closure
+	(function(${1:args})
+	{
+		${2}
+	})($1);
+snippet fun as property
+	${1:name}: function(${2})
+	{
+		${4}
+	}${3:,}
+snippet if
+	if(${1:true})
+	{
+		${2}
+	}
+snippet ife
+	if(${1:true})
+	{
+		${2}
+	}
+	else
+	{
+		${3}
+	}
+snippet ?
+	${1} ? ${2:a} : ${3:b};
+snippet switch
+	switch(${1})
+	{
+		case ${2}:
+			${3:// code}
+			break;
+		${4}
+		default:
+			${5}
+	}
+snippet case
+	case ${1:case}:
+		${2:// code}
+		break;
+	${3}
+snippet for
+	for(var $1 = 0; ${1:i} < ${2:list}.length; $1++)
+	{
+		var item = $2[$1];
+		${4}
+	}
+snippet setTimeout
+	setTimeout(function()
+		{
+			${2}
+		},
+		${1:100}
+	);
+
+

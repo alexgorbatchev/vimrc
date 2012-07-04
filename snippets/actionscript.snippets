@@ -1,0 +1,135 @@
+snippet /**
+	/**
+	 * ${1}
+	 * @author agorbatchev
+	 * @date `strftime("%Y/%m/%d")`
+	 */
+snippet var public
+	public var ${1:name} : ${2:String};
+snippet var private
+	private var _${1:name} : ${2:String};
+snippet var with getter
+	private var _${1:name} : ${2:String};
+
+	public function get $1() : $2
+	{
+		return _$1;
+	}
+snippet var with getter and setter
+	private var _${1:name} : ${2:String};
+
+	public function get $1() : $2
+	{
+		return _$1;
+	}
+
+	public function set $1(value : $2) : void
+	{
+		_$1 = value;
+	}
+snippet var inspectable
+	private var _${1:name} : ${2:String} = ${3:''};
+
+	[Inspectable(name='${4}', defaultValue=$3)]
+	public function get $1() : $2
+	{
+		return _$1;
+	}
+
+	public function set $1(value : $2) : void
+	{
+		_$1 = value;
+	}
+snippet var MovieClip
+	public var ${1} : MovieClip;
+snippet var TextField
+	public var ${1} : TextField;
+snippet import MovieClip
+	import flash.display.MovieClip;
+snippet import DisplayObject
+	import flash.display.DisplayObject;
+snippet import DisplayObjectContainer
+	import flash.display.DisplayObjectContainer;
+snippet import TextField
+	import flash.text.TextField;
+snippet import TextFormat
+	import flash.text.TextFormat;
+snippet import Event
+	import flash.events.Event;
+snippet import MouseEvent
+	import flash.events.MouseEvent;
+snippet fun public
+	public function ${1:name}(${2}) : ${3:void}
+	{
+		${4}
+	}
+snippet fun private
+	private function ${1:name}(${2}) : ${3:void}
+	{
+		${4}
+	}
+snippet fun protected
+	protected function ${1:name}(${2}) : ${3:void}
+	{
+		${4}
+	}
+snippet fun anonymous
+	function(${1}) : void
+	{
+		${2}
+	}
+snippet fun closure
+	(function(${1:args}) : void
+	{
+		${2}
+	})($1);
+snippet fun as property
+	${1:name}: function(${2})
+	{
+		${4}
+	}${3:,}
+snippet if
+	if(${1:true})
+	{
+		${2}
+	}
+snippet ife
+	if(${1:true})
+	{
+		${2}
+	}
+	else
+	{
+		${3}
+	}
+snippet ?
+	${1} ? ${2:a} : ${3:b};
+snippet switch
+	switch(${1})
+	{
+		case ${2}:
+			${3:// code}
+			break;
+		${4}
+		default:
+			${5}
+	}
+snippet case
+	case ${1:case}:
+		${2:// code}
+		break;
+	${3}
+snippet for
+	for(var $1 : Number = 0; ${1:i} < ${2:list}.length; $1++)
+	{
+		var item : ${3:String} = $2[$1];
+		${4}
+	}
+snippet setTimeout
+	setTimeout(function() : void
+		{
+			${2}
+		},
+		${1:100}
+	);
+
