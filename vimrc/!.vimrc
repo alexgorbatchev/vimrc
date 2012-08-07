@@ -11,7 +11,7 @@ endif
 
 if has("gui_macvim")
 	" set go+=c 												" disable visual dialogs
-	set guifont=Bitstream\ Vera\ Sans\ Mono:h12 			" My font! YES!
+	set guifont=Bitstream\ Vera\ Sans\ Mono:h10 			" My font! YES!
 	set guioptions-=T 										" hide gvim's toolbar by default
 endif
 
