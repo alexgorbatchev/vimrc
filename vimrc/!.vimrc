@@ -1,8 +1,12 @@
-" Pathogen hookup
+""""""""""""""""""""""""""""""""""""
+" vundle hookup
+"
 filetype off 
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
-filetype plugin on
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+source $HOME/.vim/vimrc/bundles.vimrc 
+filetype plugin indent on
+""""""""""""""""""""""""""""""""""""
 
 set t_Co=256
 
@@ -15,7 +19,7 @@ if has("gui_macvim")
 	set guioptions-=T 										" hide gvim's toolbar by default
 endif
 
-colorscheme railscasts
+colorscheme sexy-railscasts
 syntax on
 
 set exrc													" enable per-directory .vimrc files
@@ -55,7 +59,7 @@ set noswapfile
 set smartindent
 set shiftwidth=4
 set tabstop=4		  " tab is 4 spaces
-set noexpandtab       " use tabs
+set expandtab         " use tabs
 
 source $HOME/.vim/vimrc/keyboard.vimrc 
 source $HOME/.vim/vimrc/file.vimrc 
