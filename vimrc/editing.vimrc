@@ -2,7 +2,6 @@
 " Useful when studying strange source code.
 " Type z/ to toggle highlighting on/off.
 nnoremap z/ :if AutoHighlightToggle()<Bar>set hls<Bar>endif<CR>
-vnoremap z' :norm wysiw'<CR>
 
 function! AutoHighlightToggle()
   let @/ = ''
@@ -66,7 +65,7 @@ nnoremap zc/ ma:%s#^\(\s*\)//\(\w\)#\1// \2#g<CR>`a
 " deletes matching/balanced braces
 nnoremap zdb %x``x
 
-" replaced word with _word, good for making public variables private
+" replaced `word` with `_word`, good for making public variables private
 nnoremap zc_ ma:%s/\<<C-r><C-w>\>/_<C-r><C-w>/g<CR>`a
 
 " replaces function name() with name: function()

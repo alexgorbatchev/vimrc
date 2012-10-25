@@ -59,11 +59,11 @@ set noswapfile
 set smartindent
 set shiftwidth=4
 set tabstop=4		  " tab is 4 spaces
-set expandtab         " use tabs
+set expandtab         " use spaces
 
 source $HOME/.vim/vimrc/keyboard.vimrc 
 source $HOME/.vim/vimrc/file.vimrc 
 source $HOME/.vim/vimrc/editing.vimrc 
-source $HOME/.vim/vimrc/ui.vimrc 
+source $HOME/.vim/vimrc/statusline.vimrc
 source $HOME/.vim/vimrc/plugins.vimrc 
 
