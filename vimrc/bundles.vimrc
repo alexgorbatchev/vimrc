@@ -47,6 +47,11 @@ Bundle 'tpope/vim-surround'
 " interface.  It's still a work in progress, and criticisms are welcome.
 Bundle 'godlygeek/tabular'
 
+" neocomplcache performs keyword completion by making a cache of keyword in
+" buffer. Because I implemented it by paying own expenses unlike the keyword
+" completion including the Vim composing type, neocomplcache can be customized
+" flexibly. Unfortunately neocomplcache may use more memory than other
+" plugins.
 Bundle 'Shougo/neocomplcache'
 
 " The ultimate vim statusline utility
