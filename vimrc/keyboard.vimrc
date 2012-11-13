@@ -45,3 +45,7 @@ nmap <S-F10> :source $MYVIMRC<CR>
 " imap <left> <nop>
 " imap <right> <nop>
 
+nmap <leader>cw :CoffeeCompile watch vert<CR>
+nmap <leader>cc :CoffeeCompile vert<CR>
+vmap <leader>cc :CoffeeCompile vert<CR>
+
