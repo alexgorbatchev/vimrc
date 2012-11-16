@@ -71,3 +71,10 @@ nnoremap zc_ ma:%s/\<<C-r><C-w>\>/_<C-r><C-w>/g<CR>`a
 " replaces function name() with name: function()
 nnoremap zcf :s/function \(\w\+\)/\1: function/<CR>`a
 
+augroup BgHighlight
+    autocmd!
+    autocmd WinEnter * set number
+    autocmd WinLeave * set nonumber
+augroup END
+
+doautocmd BgHighlight WinEnter -
