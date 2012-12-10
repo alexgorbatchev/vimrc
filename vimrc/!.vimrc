@@ -50,6 +50,7 @@ set directory=~/.vim/swap,~/tmp,/var/tmp/,tmp             " Store swapfiles in a
 set nofoldenable                                          " I don't like folding...
 set magic
 set nobackup
+set nowritebackup
 set noswapfile
 
 "set smarttab          " use shiftwidth when hitting tab instead of sts (?)
